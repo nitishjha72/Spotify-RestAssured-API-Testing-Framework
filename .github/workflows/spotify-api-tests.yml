@@ -12,9 +12,9 @@ on:
   workflow_dispatch:
     inputs:
       env:
-        description: 'Target environment'
+        description: Target environment
         required: false
-        default: 'qa'
+        default: qa
         type: choice
         options:
           - dev
@@ -93,3 +93,12 @@ jobs:
       - name: Deploy to GitHub Pages
         if: always()
         uses: actions/deploy-pages@v4
+
+      - name: Add Allure Report link to summary
+        if: always()
+        run: |
+          echo "## Allure Test Report" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Environment: **${{ inputs.env || 'qa' }}**" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "[View Allure Report](https://nitishjha72.github.io/Spotify-RestAssured-API-Testing-Framework/)" >> $GITHUB_STEP_SUMMARY
