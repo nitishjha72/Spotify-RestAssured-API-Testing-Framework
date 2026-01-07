@@ -1,3 +1,5 @@
+![Spotify API Tests](https://github.com/nitishjha72/Spotify-RestAssured-API-Testing-Framework/actions/workflows/spotify-api-tests.yml/badge.svg)
+
 # Spotify API Automation Framework
 
 A production-grade **API automation framework** built using **Rest Assured**, **TestNG**, and **Allure**, with **OAuth 2.0 authentication**, **parallel-safe tests**, and **CI/CD integration using GitHub Actions**.  
