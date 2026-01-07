@@ -1,0 +1,18 @@
+{
+  "customer": {
+    "name": "Nitish",
+    "segment": "STANDARD"
+  },
+  "market": {
+    "code": "IN",
+    "language": "EN"
+  },
+  "pricing": {
+    "amount": 150,
+    "currency": "INR",
+    "discount": {
+      "applied": false,
+      "percentage": 0
+    }
+  }
+}
